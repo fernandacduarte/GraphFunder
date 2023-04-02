@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <ul className="menu-horizontal p-0 pr-3 font-semibold uppercase focus:bg-none">
           <li className="btn bg-transparent rounded-lg border-transparent">
-            <Link href={"/explore"}>
+            <Link href={"/"}>
               Explore
             </Link>
           </li>
