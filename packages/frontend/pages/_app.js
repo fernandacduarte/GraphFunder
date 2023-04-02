@@ -75,7 +75,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider theme={darkTheme({
-        accentColor: '#7b3fe4',
+        accentColor: '#4A4747',
         accentColorForeground: 'white',
         borderRadius: 'medium',
       })} chains={chains} coolMode>

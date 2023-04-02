@@ -1,36 +1,78 @@
-import * as React from 'react'
+// Navbar.js
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import Link from "next/link";
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const SVGGraph = (props) => (
+    <svg
+      width="28px"
+      height="28px"
+      viewBox="0 0 36 36"
+      id="icon"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <defs>
+        <style>{".cls-1{fill:none;}"}</style>
+      </defs>
+      <title>{"network--2"}</title>
+      <path d="M19.125 19.125h5.785a4.5 4.5 0 1 0 0 -2.25H19.125V7.875h5.785a4.5 4.5 0 1 0 0 -2.25H19.125a2.253 2.253 0 0 0 -2.25 2.25v9H11.09a4.5 4.5 0 1 0 0 2.25H16.875v9a2.253 2.253 0 0 0 2.25 2.25h5.785a4.5 4.5 0 1 0 0 -2.25H19.125Zm10.125 -3.375a2.25 2.25 0 1 1 -2.25 2.25A2.253 2.253 0 0 1 29.25 15.75ZM29.25 4.5a2.25 2.25 0 1 1 -2.25 2.25A2.253 2.253 0 0 1 29.25 4.5ZM6.75 20.25a2.25 2.25 0 1 1 2.25 -2.25A2.253 2.253 0 0 1 6.75 20.25Zm22.5 6.75a2.25 2.25 0 1 1 -2.25 2.25A2.253 2.253 0 0 1 29.25 27Z" />
+    </svg>
+);
+
   return (
-    <div className="navbar sticky top-0 z-50 bg-[#0B090A] drop-shadow-md text-base-100 pr-6">
-      <div className="navbar-start">
-        <a className="btn btn-ghost normal-case text-xl ml-1.5 pl-2 pr-2">
-          {/* <svg className="mr-2" width="22px" height="22px" viewBox="0 0 22 22" fill="#FFFFFF" stroke="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.875 13.75h0.515v0.688c0 0.379 0.308 0.688 0.688 0.688h1.719c0.379 0 0.688 -0.308 0.688 -0.688v-0.688h0.515c0.759 0 1.375 -0.616 1.375 -1.375V2.75c0 -0.759 -0.616 -1.375 -1.375 -1.375V0.688c0 -0.379 -0.308 -0.688 -0.688 -0.688h-2.75c-0.379 0 -0.688 0.308 -0.688 0.688v0.688c-0.759 0 -1.375 0.616 -1.375 1.375v9.625c0 0.759 0.616 1.375 1.375 1.375zm13.063 5.5h-0.056C21.194 17.789 22 15.865 22 13.75c0 -4.549 -3.701 -8.25 -8.25 -8.25v2.75c3.033 0 5.5 2.467 5.5 5.5s-2.467 5.5 -5.5 5.5H2.063c-1.139 0 -2.063 0.923 -2.063 2.063 0 0.379 0.308 0.688 0.688 0.688h20.625c0.379 0 0.688 -0.308 0.688 -0.688 0 -1.139 -0.923 -2.063 -2.063 -2.063zm-15.469 -1.375h8.938c0.19 0 0.344 -0.154 0.344 -0.344v-0.688c0 -0.19 -0.154 -0.344 -0.344 -0.344H4.469c-0.19 0 -0.344 0.154 -0.344 0.344v0.688c0 0.19 0.154 0.344 0.344 0.344z"/></svg> */}
-          <Link href={"/"}>
-          Graph-Fünder
+    <nav
+      className={`navbar sticky top-0 z-50 w-full drop-shadow-md transition-all duration-300 ${
+        scrolling ? 'bg-opacity-50 bg-[#333333]' : 'bg-[#333333]'
+      }`}
+    >
+      <div className="container mx-auto px-6 py-2 flex justify-between items-center">
+        <div className="menu horizontal items-center justify-center">
+          <div className="flex items-center justify-center w-12 h-12 mr-2 rounded-full bg-[#CBC8C8]">
+              <SVGGraph />
+          </div>
+          <Link href="/" className="text-2xl font-bold text-[#CBC8C8] hover:text-[#FFFFFF]">
+            GraphFunder
           </Link>
-        </a>
-      </div>
-      <div className="navbar-end">
-        <ul className="menu-horizontal p-0 pr-3 font-semibold uppercase focus:bg-none">
-          <li className="btn bg-transparent rounded-lg border-transparent">
-            <Link href={"/"}>
-              Explore
-            </Link>
-          </li>
-          <li className="btn bg-transparent rounded-lg border-transparent">
-            <Link href={"/publish"}>
-              Publish
-            </Link>
-          </li>
-        </ul>
+        </div>
+        <div className="flex items-center justify-left">
+        <div>
+          <Link
+            href={"/"}
+            className="text-[#C1BDBD] px-4 py-2 rounded transition-colors duration-200 hover:text-[#FFFFFF] active:text-[#FFFFFF]"
+          >
+            Explore
+          </Link>
+          <Link 
+            href={"/publish"}
+            className="text-[#C1BDBD] px-4 py-2 mr-4 rounded transition-colors duration-200 hover:text-[#FFFFFF] active:text-[#FFFFFF]"
+          >
+            Donate
+          </Link>
+        </div>
         <ConnectButton />
+        </div>
       </div>
-    </div>
-  )
-}
+    </nav>
+  );
+};
 
 export default Navbar;
-
