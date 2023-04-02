@@ -228,7 +228,7 @@ const TotalDonation = () => {
   return (
     <div className="card bg-[#F2F2F2] text-center mt-5 mb-3 pr-2.5 w-36 drop-shadow-lg text-gray-700 ">
       <div className="flex items-center justify-center mt-2">
-        <EthSymbol />
+        {/* <EthSymbol /> */}
         <h6 className="text-5xl font-extrabold">
         40 
         </h6>
@@ -321,7 +321,7 @@ const DonationsInfo2 = () => {
     <div className="stats drop-shadow mt-10">
       <div className="stat">
         <div className="stat-figure text-primary mt-2">
-          <EthSymbol />
+          {/* <EthSymbol /> */}
         </div>
         <div className="stat-title font-semibold">Total Donations</div>
         {/* <div className="stat-value text-primary text-10xlg text-black">25.6</div> */}
