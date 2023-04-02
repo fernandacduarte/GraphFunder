@@ -65,7 +65,7 @@ const Navbar = () => {
             href={"/publish"}
             className="text-[#C1BDBD] px-4 py-2 mr-4 rounded transition-colors duration-200 hover:text-[#FFFFFF] active:text-[#FFFFFF]"
           >
-            Donate
+            Publish
           </Link>
         </div>
         <ConnectButton />
