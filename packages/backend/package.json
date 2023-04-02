@@ -9,7 +9,8 @@
     "deploy": "hardhat deploy --export-all ../frontend/contracts/hardhat_contracts.json",
     "compile": "hardhat compile",
     "test": "hardhat test",
-    "claimTestnetAlfajores": "npx hardhat --network alfajores run scripts/claimTrigger.js"
+    "claimTestnetAlfajores": "npx hardhat --network alfajores run scripts/claimTrigger.js",
+    "verify": "npx hardhat verify"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10",

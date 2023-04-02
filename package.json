@@ -14,7 +14,8 @@
     "test": "yarn workspace @create-web3/backend test",
     "clean": "yarn workspace @create-web3/backend clean",
     "deploy": "yarn workspace @create-web3/backend deploy",
-    "claimTestnetAlfajores": "yarn workspace @create-web3/backend claimTestnetAlfajores"
+    "claimTestnetAlfajores": "yarn workspace @create-web3/backend claimTestnetAlfajores",
+    "verify": "yarn workspace @create-web3/backend verify"
   },
   "workspaces": {
     "packages": [
