@@ -4,7 +4,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '128': '32rem',
+      }
+    }
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+    },
   },
   plugins: [require("daisyui")],
 };
