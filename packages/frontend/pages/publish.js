@@ -78,7 +78,7 @@ export default function PublishComponent() {
     const storeReturn = await storeNFT(
       image,
       inputProject,
-      inputProject,
+      inputWebsite,
       inputDescription
     )
     console.log("storeReturn", storeReturn)
