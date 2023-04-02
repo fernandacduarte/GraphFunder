@@ -1,8 +1,9 @@
 # Graph Funder
-- Mission
-- How does it work?
-- Introducing Graph-Funding Technology
-- Automatized Distribution
+- [Mission](https://github.com/pbfranceschin/Graph-Funder#mission)
+- [How does it work?](https://github.com/pbfranceschin/Graph-Funder#how-does-it-work)
+- [Introducing Graph-Funding Technology](https://github.com/pbfranceschin/Graph-Funder#introducing-graph-funding-technology)
+- [Automatized Distribution](https://github.com/pbfranceschin/Graph-Funder#automatized-distribution)
+- [Tech Stack](https://github.com/pbfranceschin/Graph-Funder#tech-stack)
 
 ## Mission
 Our mission is to leverage web3 tools to improve the funding of **public goods**. We believe blockchain is the most powerful technology ever created to achieve this goal. **LET'S LEVERAGE IT TO CAUSE A HUGE IMPACT ON OUR COMMUNITY!!!**
