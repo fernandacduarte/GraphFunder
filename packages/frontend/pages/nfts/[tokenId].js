@@ -91,7 +91,7 @@ const ReferenceRow = ({index, tokenId}) => {
       <tr className="hover" onClick={rowClick}>
         <td>{index + 1}</td>
         <td>{metadata ? metadata.name : ""}</td>
-        <td>{metadata ? metadata.properties.author : ""}</td>
+        <td>{metadata ? metadata.website : ""}</td>
         <td>{value} ETH</td>
       </tr>
   )
@@ -104,8 +104,8 @@ const ReferenceTable = ({references}) => {
       <thead>
         <tr>
           <th></th>
-          <th>Title</th>
-          <th>Authors</th>
+          <th>Project</th>
+          <th>site</th>
           <th>Total Donations</th>
         </tr>
       </thead>
