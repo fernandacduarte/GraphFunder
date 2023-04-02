@@ -12,6 +12,7 @@ const contractABI =
   contracts[chainId][0].contracts.NFT.abi;
 
 export const getContractData = () => {
+  //console.log(contractAddress)
   return [contractAddress, contractABI];
 };
 

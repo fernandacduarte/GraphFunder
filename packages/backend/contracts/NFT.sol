@@ -114,7 +114,7 @@ contract NFT is ERC721URIStorage, ReentrancyGuard, Ownable {
   }
  
   function getDependencies (uint256 tokenId) public view returns(uint256[] memory) {
-    require(tokenId >= 0 && tokenId < _tokenIds.current(), "enter a valid token Id");
+    require(tokenId >= 0 && tokenId < _tokenIds.current(), "enter a valid token Id.");
     return _dependencies[tokenId];
   }
 
@@ -161,7 +161,7 @@ contract NFT is ERC721URIStorage, ReentrancyGuard, Ownable {
 
 
 /**
- * tokens methods
+ * tokens methods 
  */
 
   function createToken (string memory tokenURI, uint256[] memory deps, uint256[] memory shares) public returns(uint256) {
