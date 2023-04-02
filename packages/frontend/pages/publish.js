@@ -18,18 +18,11 @@ import {NFT_STORAGE_KEY} from '../nftstoragekey';
 
 import {
   useContract,
-  useContractRead,
-  usePrepareContractWrite,
-  useContractWrite,
   useSigner,
-  useWaitForTransaction,
-  chain,
 } from "wagmi";
 
 import { getContractData } from '../utils'
 const [contractAddress, contractABI] = getContractData();
-
-const description = "OPenScience: permissionless research publishing and retroactive graph-funding"
 
 // TODO: move it to a different file
 async function storeNFT(image, project, website, description) {
