@@ -8,7 +8,8 @@
     "clean": "npx hardhat clean",
     "deploy": "hardhat deploy --export-all ../frontend/contracts/hardhat_contracts.json",
     "compile": "hardhat compile",
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "claimTestnetAlfajores": "npx hardhat --network alfajores run scripts/claimTrigger.js"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.10",
@@ -22,6 +23,7 @@
     "hardhat-deploy": "^0.11.23"
   },
   "dependencies": {
+    "alchemy-sdk": "^2.2.3",
     "dotenv": "^16.0.0"
   }
 }
