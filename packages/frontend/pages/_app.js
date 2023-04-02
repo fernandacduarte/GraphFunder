@@ -58,7 +58,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'OPenScience',
+  appName: 'GraphFunder',
   chains,
 });
 
@@ -80,7 +80,7 @@ const App = ({ Component, pageProps }) => {
         borderRadius: 'medium',
       })} chains={chains} coolMode>
         <NextHead>
-          <title>OPenScience</title>
+          <title>GraphFunder</title>
         </NextHead>
         <Component {...pageProps} />
       </RainbowKitProvider>
