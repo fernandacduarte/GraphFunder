@@ -92,7 +92,7 @@ const ReferenceRow = ({index, tokenId}) => {
         <td>{index + 1}</td>
         <td>{metadata ? metadata.name : ""}</td>
         <td>{metadata ? metadata.website : ""}</td>
-        <td>{value} ETH</td>
+        <td>{value} CELO</td>
       </tr>
   )
 }
@@ -263,7 +263,7 @@ const InputDonation = () => {
   return (
     <div className="card form-control place-items-center bg-transparent p-1.5">
       <input type="text"
-             placeholder="0.01 ETH"
+             placeholder="0.01 CELO"
              className="input input-bordered w-40"
              value = {donationAmount}
              onChange={handleChange}/>
@@ -279,7 +279,7 @@ const DonationsInfo1 = () => {
       <TotalDonation />
       <div className="form-control pl-14 mb-5 mt-3 mr-12">
         <label className="input-group">
-          <input type="text" placeholder="0.01 ETH" className="input input-bordered border-gray-400" />
+          <input type="text" placeholder="0.01 CELO" className="input input-bordered border-gray-400" />
           <span className="bg-[#F7BE38] font-semibold">
             <svg 
               class="w-4 h-4 mr-2 -ml-1 text-[#000000]" 
