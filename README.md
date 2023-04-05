@@ -1,4 +1,4 @@
-This project was honored as a finalist in the [ETHSamba Hack Rio 23](https://taikai.network/ethsamba/hackathons/ethsambahack).
+This is a fork of the [original project](https://github.com/pbfranceschin/Graph-Funder) finalist of the [ETHSamba Hack Rio 23](https://taikai.network/ethsamba/hackathons/ethsambahack).
 
 # Graph Funder
 - [Mission](https://github.com/pbfranceschin/Graph-Funder#mission)
