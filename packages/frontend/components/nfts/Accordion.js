@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import AccordionLayout from './AccordionLayout'
-import {useTokenId, useTokenUri, useTokenMetaData} from "../../hooks/nft"
+import {useTokenId, useTokenMetaData} from "../../hooks/nft"
 
-export default function Accordion() {
+const Accordion = (props) => {
   const [activeIndices, setActiveIndices] = useState([false, false])
   const tokenId = useTokenId();
   const metadata = useTokenMetaData(tokenId)
@@ -15,7 +15,7 @@ export default function Accordion() {
       data-accordion="collapse" 
     >
         <AccordionLayout 
-          title="website" 
+          title={props.title}
           body={metadata ? metadata.website : ""}
           index={0}
           activeIndices={activeIndices}
@@ -24,3 +24,5 @@ export default function Accordion() {
     </div>
   )
 }
+
+export default Accordion
