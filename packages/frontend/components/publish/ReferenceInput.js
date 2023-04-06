@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { useTokenMetaData } from "../../hooks/nft"
 import { stringTrim } from '../../utils'
 
-// TODO: como usar a funcionalidade do removeRowButton em um componente separado??
-// import ReferencesTable from './ReferencesTable';
+// TODO: how to use the removeRowButton functionality in a separate component?
 
 const ReferenceTitle = ({tokenId}) => {
   const metadata = useTokenMetaData(tokenId)
@@ -57,11 +56,9 @@ const ReferenceInput = ({setReferences}) => {
         <span className="label-text uppercase font-base font-medium text-base">References</span>
       </label>
 
-      {/* <ReferencesTable removeReference={removeReference} referencesInfo={referenceList}/> */}
       {referenceList.length !== 0 
         ? <div className="overflow-x-auto overflow-y-auto mb-1">
               <table className="table w-full text-xs hover:bg-gray-50">
-                {/* <!-- head --> */}
                 <thead>
                   <tr>
                     <th></th>

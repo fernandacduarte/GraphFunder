@@ -6,7 +6,7 @@ const DescriptionInput = (props) => {
       <label className="label">
         <span className="label-text uppercase font-base font-medium text-base">Description</span>
       </label>
-      <textarea className="textarea textarea-bordered" placeholder="A brief description about your work." onChange={(event) => props.func(event.target.value) } ></textarea>
+      <textarea className="textarea textarea-bordered leading-normal" placeholder="Provide a short summary of your project here" onChange={(event) => props.func(event.target.value) } ></textarea>
     </div>
   );
 };

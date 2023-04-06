@@ -49,7 +49,7 @@ const AccordionLayout = ({ title, body, index, activeIndices, setActiveIndices }
       <h2 id="accordion-flush-heading-1" onClick={() => handleSetIndex(index)}>
         <button 
           type="button" 
-          className="flex items-center justify-between w-full pb-2 pt-5 text-left border-b border-gray-300 bg-transparent text-gray-700 font-semibold leading-5" 
+          className="flex items-center justify-between w-full pb-1 pt-5 text-left border-b border-gray-300 bg-transparent text-gray-700 font-semibold leading-5" 
           data-accordion-target="#accordion-flush-body-1" 
           aria-expanded={activeIndices[index] ? "true" : "false"} 
           aria-controls="accordion-flush-body-1">
@@ -62,8 +62,8 @@ const AccordionLayout = ({ title, body, index, activeIndices, setActiveIndices }
       </h2>
       {(activeIndices[index]) && (
         <div id="accordion-flush-body-1" className="" aria-labelledby="accordion-flush-heading-1">
-          <div className="py-5 border-b border-gray-300">
-            <p className="mb-2 text-gray-700">
+          <div className="py-3 border-gray-300">
+            <p className="mb-5 text-gray-700">
               {body}
             </p>
           </div>
