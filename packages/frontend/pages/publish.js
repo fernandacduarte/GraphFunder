@@ -102,11 +102,11 @@ export default function PublishComponent() {
   }
   
   return (
-    <div>
+    <div className="bg-[#1E202D]">
       <Navbar/>
-      <div className="bg-base-200 min-h-screen">
-        <div className="hero min-h-fit bg-base-200 pt-6 pb-6">
-            <div className="w-3/5 hero-content bg-base-100 flex-col card lg:flex-row-reverse drop-shadow-md  relative overflow-x-auto overflow-y-auto mt-20">
+      <div className="bg-[#1E202D] min-h-screen">
+        <div className="hero min-h-fit bg-[#1E202D] pt-6 pb-6">
+            <div className="w-3/5 hero-content bg-base-100 flex-col card lg:flex-row-reverse drop-shadow-md  relative overflow-x-auto overflow-y-auto mt-10">
               <div>
                 <PreviewCard project={inputProject} setImage={setImage} website={inputWebsite}/>
               </div>
