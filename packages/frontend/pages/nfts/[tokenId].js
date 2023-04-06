@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { useState } from "react";
 import { useRouter } from 'next/router'
 import Accordion from '../../components/nfts/Accordion';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/common/Navbar';
 import {
   useTokenId,
   useTokenUri,
