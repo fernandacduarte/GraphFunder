@@ -106,18 +106,18 @@ export default function PublishComponent() {
       <Navbar/>
       <div className="bg-base-200 min-h-screen">
         <div className="hero min-h-fit bg-base-200 pt-6 pb-6">
-            <div className="w-3/5 hero-content flex-col card lg:flex-row-reverse drop-shadow-md bg-base-100 relative overflow-x-auto overflow-y-auto mt-20">
+            <div className="w-3/5 hero-content bg-base-100 flex-col card lg:flex-row-reverse drop-shadow-md  relative overflow-x-auto overflow-y-auto mt-20">
               <div>
                 <PreviewCard project={inputProject} setImage={setImage} website={inputWebsite}/>
               </div>
               <div className="card shrink w-full max-w-2xl bg-base-100">
-                <div className="card-body pl-3">
+                <div className="card-body pl-1">
                   <TextInput label={"Project"} placeholder={"Enter your project's name"} func={setInputProject} />
                   <TextInput label={"Website"} placeholder={"Enter your website's url"} func={setInputWebsite} />
                   <DescriptionInput func={setInputDescription}/>
                   <ReferenceInput setReferences={setReferences} />
                   <div className="form-control mt-6">
-                    <button onClick={mint} className="btn btn-primary bg-black border-black hover:bg-yellow-500 hover:border-yellow-500 hover:text-black">{buttonText}</button>
+                    <button onClick={mint} className="btn btn-primary bg-black border-black hover:bg-[#59CAAE] hover:border-[#59CAAE] hover:text-black">{buttonText}</button>
                   </div>
                 </div>
               </div>

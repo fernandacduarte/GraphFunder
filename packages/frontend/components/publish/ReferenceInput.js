@@ -92,7 +92,7 @@ const ReferenceInput = ({setReferences}) => {
           value={inputReference}
         />
         <button 
-          className="btn btn-xs text-gray-500 absolute right-2.5 bottom-3 capitalize bg-gray-200 border-gray-200 hover:bg-gray-300 hover:border-gray-300"
+          className="btn btn-xs text-gray-500 absolute right-2.5 bottom-3 capitalize bg-gray-200 border-gray-200 hover:bg-[#92DDE9] hover:border-[#92DDE9] hover:text-[#000]"
           onClick={HandleSetInputReference}
         >
             Add

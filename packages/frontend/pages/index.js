@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navbar from '../components/common/Navbar';
 import SearchBar from '../components/explore/SearchBar';
 import CardToken from '../components/explore/CardToken';
-import Link from "next/link";
 
 import { useAllMetadata } from '../hooks/nft'
 
@@ -23,9 +22,11 @@ const processSearch = (searchFrase, allMetadata) => {
 export default function ExploreComponent() {
   const [searchFrase, setSearchFrase] = useState('')
   const allMetadata = useAllMetadata()
+  
   const searchList = processSearch(searchFrase, allMetadata)
+  
   return (
-    <div>
+    <div className="bg-[#1E202D]">
       <Navbar/>
       <div className="flex flex-col w-full place-items-center p-6">
         <SearchBar setSearchFrase={setSearchFrase}/>

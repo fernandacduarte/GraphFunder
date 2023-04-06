@@ -35,20 +35,20 @@ const Navbar = () => {
       <title>{"network--2"}</title>
       <path d="M19.125 19.125h5.785a4.5 4.5 0 1 0 0 -2.25H19.125V7.875h5.785a4.5 4.5 0 1 0 0 -2.25H19.125a2.253 2.253 0 0 0 -2.25 2.25v9H11.09a4.5 4.5 0 1 0 0 2.25H16.875v9a2.253 2.253 0 0 0 2.25 2.25h5.785a4.5 4.5 0 1 0 0 -2.25H19.125Zm10.125 -3.375a2.25 2.25 0 1 1 -2.25 2.25A2.253 2.253 0 0 1 29.25 15.75ZM29.25 4.5a2.25 2.25 0 1 1 -2.25 2.25A2.253 2.253 0 0 1 29.25 4.5ZM6.75 20.25a2.25 2.25 0 1 1 2.25 -2.25A2.253 2.253 0 0 1 6.75 20.25Zm22.5 6.75a2.25 2.25 0 1 1 -2.25 2.25A2.253 2.253 0 0 1 29.25 27Z" />
     </svg>
-  );
+);
 
   return (
     <nav
       className={`navbar sticky top-0 z-50 w-full drop-shadow-md transition-all duration-300 ${
-        scrolling ? 'bg-opacity-50 bg-[#333333]' : 'bg-[#333333]'
+        scrolling ? 'bg-opacity-80 bg-[#292C3D]' : 'bg-[#1E202D]'
       }`}
     >
       <div className="container mx-auto px-6 py-2 flex justify-between items-center">
         <div className="menu horizontal items-center justify-center">
-          <div className="flex items-center justify-center w-12 h-12 mr-2 rounded-full bg-[#CBC8C8]">
+          <div className="flex items-center justify-center w-12 h-12 mr-2 rounded-full bg-[#59CAAE]">
               <SVGGraph />
           </div>
-          <Link href="/" className="text-2xl font-bold text-[#CBC8C8] hover:text-[#FFFFFF]">
+          <Link href="/" className="text-2xl font-bold text-[#CBC8C8] hover:text-[#59CAAE]">
             GraphFunder
           </Link>
         </div>
@@ -56,13 +56,13 @@ const Navbar = () => {
         <div>
           <Link
             href={"/"}
-            className="text-[#C1BDBD] px-4 py-2 rounded transition-colors duration-200 hover:text-[#FFFFFF] active:text-[#FFFFFF]"
+            className="text-[#C1BDBD] px-4 py-2 rounded transition-colors duration-200 hover:text-[#92DDE9] active:text-[#92DDE9]"
           >
             Explore
           </Link>
           <Link 
             href={"/publish"}
-            className="text-[#C1BDBD] px-4 py-2 mr-4 rounded transition-colors duration-200 hover:text-[#FFFFFF] active:text-[#FFFFFF]"
+            className="text-[#C1BDBD] px-4 py-2 mr-4 rounded transition-colors duration-200 hover:text-[#92DDE9] active:text-[#92DDE9]"
           >
             Publish
           </Link>
