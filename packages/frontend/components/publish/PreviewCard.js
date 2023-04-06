@@ -34,21 +34,6 @@ const PreviewCard = (props) => {
     )
   }
 
-  const PrintCurrentDate = () => {
-    const currentDate = new Date()
-    const currentYear = currentDate.getFullYear()
-    const currentDay = currentDate.getDate()
-    const options = { month: 'long'}
-    const currentMonth = new Intl.DateTimeFormat('en-US', options).format(currentDate)
-    const formatCurrentMonth = currentMonth.slice(0, 3).toUpperCase()
-
-    return (
-      <span className="text-gray-600">
-        {` — ${currentDay} ${formatCurrentMonth} ${currentYear}`}
-      </span>
-    )
-  }
-
   return ( 
     <div className="card w-96 bg-base-100 border border-black-100 shadow-xl">
        <figure className="h-full overflow-hidden">
@@ -69,13 +54,6 @@ const PreviewCard = (props) => {
         <p className="mb-2 text-gray-700">
           {props.website}
         </p>
-        {/* <a
-          href="/"
-          aria-label=""
-          className="inline-flex items-center font-semibold transition-colors duration-200 text-gray-900 hover:text-purple-800"
-        >
-          Learn more
-        </a> */}
       </div>
     </div>
   )
