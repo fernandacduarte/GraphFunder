@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar sticky top-0 z-50 w-full drop-shadow-md transition-all duration-300 ${
-        scrolling ? 'bg-opacity-80 bg-[#292C3D]' : 'bg-[#1E202D]'
+        scrolling ? 'bg-opacity-90 bg-[#292C3D]' : 'bg-[#1E202D]'
       }`}
     >
       <div className="container mx-auto px-6 py-2 flex justify-between items-center">
